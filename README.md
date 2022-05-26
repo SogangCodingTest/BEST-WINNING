@@ -41,9 +41,12 @@
       - (ex) `김동윤 1주차 문제풀이`<br><br>
 
  <br> 
-# Study-Rule
+ 
+### Study-Rule
 <br>
-# Table of Content
+
+### Table of Content
+
 ### 알고리즘 문제풀이 순서
 - [1주차. Basics] ☑
 - [2주차. Basics] ☑
