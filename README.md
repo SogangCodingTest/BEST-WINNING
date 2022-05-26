@@ -9,7 +9,7 @@
   - [백준 코테 유형별 문제풀이](#table-of-content)
   - [벌금 규칙](#late-fee)
 
- 
+ <br>
 ### Study-Rule
 <br>
 
@@ -22,7 +22,7 @@
 - 각자 솔루션 다루기, 피드백 진행
 - 개념 공부 방식
 - 각자 공부한, 좋은 자료있으면 소스(블로그) 공유
-
+<br>
 ### Collaborator
 
 <p align="center">
