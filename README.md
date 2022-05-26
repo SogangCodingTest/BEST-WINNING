@@ -5,13 +5,12 @@
   - [Repository Rule](#repository-rule)
   - [Collaborator](#collaborator)
   - [Reference](#reference)
-
-### `스터디 진행 상황`
-- [백준 코테 유형별 문제풀이](#first-study)
+  - [백준 코테 유형별 문제풀이](#table-of-content)
+  - [벌금 규칙](#late-fee)
 
   
 <p align="center">
-  <img src="https://blog.kakaocdn.net/dn/bTUS0r/btqCtYkkVjX/d3KozubgCSWLv1X9V5lbY1/img.png" alt="coding" width="150px" />
+  <img src="https://velog.velcdn.com/images/myway00/post/aaa4a0be-9862-44de-8058-53db2eacbcf1/image.PNG" alt="coding" width="150px" />
 	
 </p>
 
@@ -49,7 +48,7 @@
 
  <br> <br>
 
-# Table of Contents
+# Table of Content
 ### 알고리즘 개념 순서
 ### 1) The Origin : 스프링부트 강의 (2/11 ~ 4/5) ☑
 - [Chapter 1. Basics] ☑
@@ -62,6 +61,10 @@
 - [Chapter 8. Spring Security] ☑
 - [Chapter 9. Spring과 Middlewares] ☑
 
+### Late-fee
+
+1. 지각 : 목요일 10pm 전까지 PR 만들기 : 1시간마다 500 원 
+2. 결석 : 사전 통보 없이 회의 참석하지 않을 시 : 1회당 1000원
 
 ______________________________________________________________________________________________________________________________________________________
 `written By `
