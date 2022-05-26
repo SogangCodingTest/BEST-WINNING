@@ -27,7 +27,7 @@
    <tr>
         <td align="center"><a href="https://github.com/hjhjhj0028"><img src="https://github.com/hjhjhj0028.png" width="100px;" alt=""/><br /><sub><b><br/>고혜정</b></sub></a></td>
 <td align="center"><a href="https://github.com/myway00"><img src="https://github.com/myway00.png" width="100px;" alt=""/><br /><sub><b><br/>김동윤</b></sub></a></td>
-<td align="center"><a href="https://github.com/myway00"><img src="https://github.com/myway00.png" width="100px;" alt=""/><br /><sub><b><br/>이정모</b></sub></a></td>
+<td align="center"><a href="https://github.com/zbnm2005"><img src="https://github.com/zbnm2005.png" width="100px;" alt=""/><br /><sub><b><br/>이정모</b></sub></a></td>
 <td align="center"><a href="https://github.com/MarsMan13"><img src="https://github.com/MarsMan13.png" width="100px;" alt=""/><br /><sub><b><br/>최건</b></sub></a></td>
      
 </table>
