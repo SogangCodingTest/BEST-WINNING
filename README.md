@@ -1,4 +1,4 @@
-# SogangCodingFighter
+# SogangCodingFighter (최고김이)
 🚀코딩테스트를 함께 준비하는 공간입니다🚀
 
 > Since 2022.05.26 ~ 
