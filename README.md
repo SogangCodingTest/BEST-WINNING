@@ -8,6 +8,7 @@
   - [Collaborator](#collaborator)
   - [백준 코테 유형별 문제풀이](#table-of-content)
   - [벌금 규칙](#late-fee)
+  - [Github 사용법](#github-tutorial)
 
  <br>
  
@@ -86,6 +87,17 @@
 - 방식 : 모인 벌금은 회식 때 사용
 
 <br><br><br>
+
+### Github Tutorial
+
+1) git clone https://github.com/SogangCodingTest/SogangCodingFighter.git
+2) cd SogangCodingFighter
+3) git branch 김동윤
+4) 자신의 파일에 자신이 푼 py / java 파일 업로드 하기
+5) git add .
+6) git commit -m "1주차 2800번 풀이"
+7) git push origin 김동윤(브랜치이름)
+8) 깃허브에서 PR 생성하기
 ______________________________________________________________________________________________________________________________________________________
 `written By `
  <td align="center"><a href="https://github.com/myway00"<sub><b><br/>김동윤</b></sub></a></td>
