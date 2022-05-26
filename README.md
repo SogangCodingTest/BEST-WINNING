@@ -1,7 +1,7 @@
 # SogangCodingFighter
 🚀코딩테스트를 함께 준비하는 공간입니다🚀
 
-> Since 2022.05.26
+> Since 2022.05.26 ~ 
 
   - [스터디 방식](#study-rule)
   - [Repository Rule](#repository-rule)
@@ -18,6 +18,10 @@
 - 모임 시간 : 매주 목요일 10pm <br>
 - 분량 : 매주 6문제 <br>
 
+<스터디 모임 시간>
+- 각자 솔루션 다루기, 피드백 진행
+- 개념 공부 방식
+- 각자 공부한, 좋은 자료있으면 소스(블로그) 공유
 
 ### Collaborator
 
