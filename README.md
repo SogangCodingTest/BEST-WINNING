@@ -88,8 +88,8 @@
 
 <br><br><br>
 
-### Github Tutorial
-
+### Github Tutorial <br>
+```
 1) git clone https://github.com/SogangCodingTest/SogangCodingFighter.git
 2) cd SogangCodingFighter
 3) git branch 김동윤
@@ -98,6 +98,8 @@
 6) git commit -m "1주차 2800번 풀이"
 7) git push origin 김동윤(브랜치이름)
 8) 깃허브에서 PR 생성하기
+```
+<br>
 ______________________________________________________________________________________________________________________________________________________
 `written By `
  <td align="center"><a href="https://github.com/myway00"<sub><b><br/>김동윤</b></sub></a></td>
