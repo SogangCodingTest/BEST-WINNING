@@ -36,17 +36,14 @@
 
 ### Repository-Rule
  <br>
- 
 - **Branch naming convention** : <br>
    - 자신의 이름으로 branch를 만듭시다!
    - => git branch `자신의 이름` 
-
- <br> 
-
+ <br>
 - **Commit convention rule** : <br>
    - => `성명 : n주차 m번 풀이` 
    - (ex) `김동윤 : 1주차 103827번 풀이` 
-
+ <br>
 - **Pull Request rule** : <br>
    - `Pull Request` 제목 : `김동윤 : n주차 문제풀이 `
       - (ex) `김동윤 1주차 문제풀이`<br><br>
