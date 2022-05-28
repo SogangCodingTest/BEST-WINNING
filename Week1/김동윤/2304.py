@@ -9,12 +9,16 @@ res=0
 for i in range(n) :
     save.append(list(map(int,sys.stdin.readline().rstrip().split()))) 
 
-save.sort() 
 # x축 기준으로 오름차순
+save.sort() 
 
+# 오름차순 기준으로, 1,h 말고도 추가로 
+# 인덱스를 나타내는 지표도 추가
 for i in range(len(save)) :
     save[i].append(i)
 
+
+# 가장 긴 애의 인덱스 구하기
 maxheight=-999
 maxidx=0
 for i in save:
@@ -23,7 +27,8 @@ for i in save:
         maxidx=i[2]
 
 stk.append(save[0])
-# 제일 긴 애 만나기 전
+
+# 제일 긴 애 만나기 전 (앞에서부터 검사)
 for i in range(1,maxidx+1) :
     if stk[-1][1] < save[i][1] : 
         res+=(save[i][0]-stk[-1][0])*stk[-1][1]
@@ -33,19 +38,7 @@ for i in range(1,maxidx+1) :
 res+=save[maxidx][1]
 stk.append(save[maxidx])
 
-# 이전 틀린 코드
-
-# if maxidx<n:
-#     for j in range(maxidx+1, n-1) :
-#         if save[j][1] > save[-1][1] :
-#             # print("res ", res)
-#             res+=(save[j][0]-stk[-1][0])*save[j][1]
-#             stk.append(save[j])
-#     res+=((save[-1][0]-stk[-1][0])*save[-1][1])
-
-# 틀린 코드 수정
-
-# 제일 긴 애 만난 후
+# 제일 긴 애 만난 후 (이번엔 뒤에서부터 검사)
 stk2=[]
 stk2.append(save[-1])
 
