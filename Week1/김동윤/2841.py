@@ -14,6 +14,7 @@ for i in range(n) :
 # 같은 줄을 만났으면 스택에서 빼주기, 각 줄에 하나씩만
 #print("lis : " , lis,"\n")
 for l,p in lis : 
+    
     #print(l,p)
     if not lis2[l] : # 아무것도 없음 내가 첫음~
         lis2[l].append(p)
@@ -44,6 +45,6 @@ for l,p in lis :
                 lis2[l].append(p)
                 cnt+=1
 
-    #print("lis2 : " ,lis2)
+    print("lis2 : " ,lis2)
 print(cnt)
 
