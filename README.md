@@ -1,4 +1,4 @@
-# BEST-WINNING (최고이김)
+# BEST-WINNING (최이김)
 🚀코딩테스트를 함께 준비하는 공간입니다🚀
 
 > Since 2022.05.26 ~ 
@@ -32,8 +32,7 @@
 <p align="center">
   
 <table align="center" >
-   <tr>
-        <td align="center"><a href="https://github.com/hjhjhj0028"><img src="https://github.com/hjhjhj0028.png" width="100px;" alt=""/><br/><sub><b><br/>고혜정</b></sub></a></td>
+
 <td align="center"><a href="https://github.com/myway00"><img src="https://github.com/myway00.png" width="100px;" alt=""/><br/><sub><b><br/>김동윤</b></sub></a></td>
 <td align="center"><a href="https://github.com/zbnm2005"><img src="https://github.com/zbnm2005.png" width="100px;" alt=""/><br/><sub><b><br/>이정모</b></sub></a></td>
 <td align="center"><a href="https://github.com/MarsMan13"><img src="https://github.com/MarsMan13.png" width="100px;" alt=""/><br/><sub><b><br/>최건</b></sub></a></td>
