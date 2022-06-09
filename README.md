@@ -1,4 +1,4 @@
-# SogangCodingFighter (최고김이)
+# BEST-WINNING (최이김)
 🚀코딩테스트를 함께 준비하는 공간입니다🚀
 
 > Since 2022.05.26 ~ 
@@ -32,8 +32,7 @@
 <p align="center">
   
 <table align="center" >
-   <tr>
-        <td align="center"><a href="https://github.com/hjhjhj0028"><img src="https://github.com/hjhjhj0028.png" width="100px;" alt=""/><br/><sub><b><br/>고혜정</b></sub></a></td>
+
 <td align="center"><a href="https://github.com/myway00"><img src="https://github.com/myway00.png" width="100px;" alt=""/><br/><sub><b><br/>김동윤</b></sub></a></td>
 <td align="center"><a href="https://github.com/zbnm2005"><img src="https://github.com/zbnm2005.png" width="100px;" alt=""/><br/><sub><b><br/>이정모</b></sub></a></td>
 <td align="center"><a href="https://github.com/MarsMan13"><img src="https://github.com/MarsMan13.png" width="100px;" alt=""/><br/><sub><b><br/>최건</b></sub></a></td>
@@ -66,18 +65,18 @@
 
 ### 1차 알고리즘 문제풀이 순서 (기간 12주) ☑
 `문제 범위 : 백준`
-- [1주차. 스택] 
-- [2주차. 큐] 
-- [3주차. 힙] 
-- [4주차. PriorityQueue] 
-- [5주차. 그래프 탐색-1 완전탐색] 
-- [6주차. 그래프 탐색-2 DFS] 
-- [7주차. 그래프 탐색-3 BFS] 
-- [8주차. 다이나믹 프로그래밍] 
-- [9주차. 구현] 
-- [10주차. 그리디 알고리즘] 
-- [11주차. 이분탐색] 
-- [12주차. 분할정복] 
+- [1주차. 스택] (6/2) ☑
+- [2주차. 큐] (6/9)
+- [3주차. 힙] (6/16)
+- [4주차. PriorityQueue] (6/23)
+- [5주차. 그래프 탐색-1 완전탐색] (6/30)
+- [6주차. 그래프 탐색-2 DFS] (7/7)
+- [7주차. 그래프 탐색-3 BFS] (7/14)
+- [8주차. 다이나믹 프로그래밍] (7/21)
+- [9주차. 구현] (7/28)
+- [10주차. 그리디 알고리즘] (8/4)
+- [11주차. 이분탐색] (8/11)
+- [12주차. 분할정복] (8/18)
 <br><br>
 ### Late-fee
 
