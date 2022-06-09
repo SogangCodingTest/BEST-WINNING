@@ -103,5 +103,4 @@
 ______________________________________________________________________________________________________________________________________________________
 
 `written By `
-<br>
- <td align="center"><a href="https://github.com/myway00"<sub><br/>김동윤</sub></a></td>
+ <td align="center"><a href="https://github.com/myway00"<sub>김동윤</sub></a></td>
