@@ -16,7 +16,7 @@
 
 <br>
 
-- `김동윤 이정모 최건` 순서대로 돌아가며 `2 2 2` 개씩 문제 내기 <br>
+- `김동윤 이정모 최건 최어진` 순서대로 돌아가며 `2 2 1 1` 개씩 문제 내기 <br>
 - 스터디 완료 후, 다음날 정오까지 카톡방에 문제 번호, 제목 업로드 <br>
 - 모임 시간 : 매주 목요일 10pm <br>
 - 분량 : 매주(금~다음주 목요일) 6문제 <br>
@@ -33,11 +33,12 @@
   
 <table align="center" >
 
-<td align="center"><a href="https://github.com/poodlepoodle"><img src="https://github.com/poodlepoodle.png" width="100px;" alt=""/><br/><sub><b><br/>최어진</b></sub></a></td>
+
 <td align="center"><a href="https://github.com/myway00"><img src="https://github.com/myway00.png" width="100px;" alt=""/><br/><sub><b><br/>김동윤</b></sub></a></td>
 <td align="center"><a href="https://github.com/zbnm2005"><img src="https://github.com/zbnm2005.png" width="100px;" alt=""/><br/><sub><b><br/>이정모</b></sub></a></td>
 <td align="center"><a href="https://github.com/MarsMan13"><img src="https://github.com/MarsMan13.png" width="100px;" alt=""/><br/><sub><b><br/>최건</b></sub></a></td>
-     
+<td align="center"><a href="https://github.com/poodlepoodle"><img src="https://github.com/poodlepoodle.png" width="100px;" alt=""/><br/><sub><b><br/>최어진</b></sub></a></td>
+  
 </table>
 
 </p>
@@ -68,7 +69,7 @@
 `문제 범위 : 백준`
 - [1주차. 스택] (6/2) ☑
 - [2주차. 큐] (6/9) ☑
-- [3주차. 힙 & PriorityQueue] (6/16)
+- [3주차. 힙 & PriorityQueue] (6/16) ☑ 
 - [4주차. 그래프 탐색-1 완전탐색] (6/23)
 - [5주차. 그래프 탐색-2 DFS] (6/30)
 - [6주차. 그래프 탐색-3 BFS] (7/7)
