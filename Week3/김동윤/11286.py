@@ -23,8 +23,8 @@ for i in range(n) :
     else : 
         if not lis :
             print(0)
-        else : 
-            target = heapq.heappop(lis)
-            print(target[1])
+        else :  
+            target = heapq.heappop(lis) 
+            print(target[1]) 
                 
 
