@@ -2,7 +2,7 @@
 L, C = list(map(int, input().split()))
 
 # C개의 문자들 입력
-letters = list(input().split())
+letters = input().split()
 
 #------- 문제 해석하기 -------#
 # 시간 제한 : 2초
@@ -30,17 +30,15 @@ def generate(cipher, current, mo, ja):
     elif current >= C:
         return
     else:
+        # 현재 문자를 포함하지 않은 암호 생성 고려
+        generate(cipher, current + 1, mo, ja)
+
         # 현재 가리키는 문자가 모음인 경우
         if letters[current] in mos:
-            # 현재 문자를 포함하지 않은 암호 생성 고려
-            generate(cipher, current + 1, mo, ja)
             # 현재 문자를 포함한 암호 생성 고려
             generate(cipher + letters[current], current + 1, mo + 1, ja)
-        
         # 현재 가리키는 문자가 자음인 경우
         else:
-            # 현재 문자를 포함하지 않은 암호 생성 고려
-            generate(cipher, current + 1, mo, ja)
             # 현재 문자를 포함한 암호 생성 고려
             generate(cipher + letters[current], current + 1, mo, ja + 1)
 
