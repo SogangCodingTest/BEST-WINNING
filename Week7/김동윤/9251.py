@@ -19,7 +19,7 @@ for i in range(len(s1)+1) :
                 # 이유 : 내 이전 순서 아이에는 이미 최대 길이가 담겨있음 
 
             else : # 문자가 다른 경우라면 
-                # 내 위와 아래 중에서 큰 것 get 
+                # 내 위와 앞 중에서 큰 것 get 
                 dp[i][j] = max(dp[i-1][j], dp[i][j-1])
 
 for d in dp : print(d)             
