@@ -21,7 +21,8 @@ for i in range(len(s1)+1) :
             else : # 문자가 다른 경우라면 
                 # 내 위와 아래 중에서 큰 것 get 
                 dp[i][j] = max(dp[i-1][j], dp[i][j-1])
-            
+
+for d in dp : print(d)             
 res = -1
 for i in range(1,len(s1)+1) :
     if dp[i][len(s2)]>res: res=dp[i][len(s2)]
