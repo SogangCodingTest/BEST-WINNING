@@ -5,8 +5,6 @@ target = list(sys.stdin.readline().strip())
 candid = []
 
 def recur(num, candidate) :
-    #print(num,candidate)
-    #print(candidate)
     if num==len(n) :
         candid.append("".join(candidate))
         return
@@ -21,7 +19,6 @@ def recur(num, candidate) :
         recur(num-1, candidate)
 
 recur(len(target), target)
-#print(candid)
 
 if n in candid : print(1)
 else : print(0)
