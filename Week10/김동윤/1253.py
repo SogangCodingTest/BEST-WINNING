@@ -7,7 +7,6 @@ n = int(sys.stdin.readline().strip())
 # 그 수를 “좋다(GOOD)”
 lis = list(map(int, sys.stdin.readline().rstrip().split()))
 lis.sort()
-cnt = Counter(lis)
 res = 0
 for i in range(n) :
     s,e = 0, n-1
