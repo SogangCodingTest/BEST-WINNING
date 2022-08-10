@@ -6,7 +6,6 @@ blue = 0
 for i in range(n) : 
     paper.append(list(map(int, sys.stdin.readline().rstrip().split())))
 
-# 여기로 보내진 애들은 합이 안맞는 애들의  쪼개짐 후보들
 def recur(r,c, width) :
     global white
     global blue
@@ -18,8 +17,7 @@ def recur(r,c, width) :
             blue+=1
         return
 
-    else : 
-        # print(r,c,n//2)
+    else :  # 여기로 보내진 애들은 합이 안맞는 애들의 쪼개짐 후보들
         recur(r,    c,      width//2)
         recur(r,    c+width//2,     width//2)
         recur(r+width//2,   c,      width//2)
@@ -27,7 +25,7 @@ def recur(r,c, width) :
         return
 #####################################
 
-def all_same_color(r,c, width) :
+def all_same_color(r,c, width) : # 색이 다 같은지 판별 함수 
     cnt = 0
     summ = 0
     for rr in range(r,r+width) : 
@@ -39,5 +37,6 @@ def all_same_color(r,c, width) :
 #######################################
 
 recur(0,0,n)
+
 print(white)
 print(blue)
