@@ -12,10 +12,12 @@ while e-s>0.000001 :
     cmp = (h1*h2/(h1+h2))
 
     if cmp < c : 
-        e = width
+        # c 보다 작으면 (c가 낮아질 수록) 너비는 커짐 
+        e = width # 좁혀주자
 
     elif cmp >= c : 
-        answr = width
+        # c 보다 크면 (c가 높아질 수록) 너비는 좁아져
+        answr = width # 너비 더 키워야 해 
         s = width
 
 print(answr)

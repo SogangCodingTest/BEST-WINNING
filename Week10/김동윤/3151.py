@@ -4,7 +4,8 @@ import sys
 n = int(sys.stdin.readline().strip())
 students = list(map(int,sys.stdin.readline().strip().split()))
 students.sort()
-std_counter = Counter(students) 
+# print(students)
+std_counter = Counter(students) # 111 22 1:3개 2ㅣ2개
 # 리스트나 셋을 인자로 넘기면 각 항목을 키로 해서 개수
 res = 0
 for i in range(n) : 
