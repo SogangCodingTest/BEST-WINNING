@@ -34,7 +34,8 @@ while s<e :
             result.append(lis[s]); 
             result.append(lis[e])
 
-        if cmp>0 : e-=1 # 더한 값이 양수였으면 좀 줄이자 
+        
+        if cmp>0 : e-=1 # 0에 가까워야 하니깐 더한 값이 양수였으면 좀 줄이자 
         else : s+=1 # 음수였다면 늘리자 
 
 result.sort()
