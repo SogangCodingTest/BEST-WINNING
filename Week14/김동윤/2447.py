@@ -1,3 +1,5 @@
+import sys
+
 def star(n,x):
     out = [] # 한번 처리한 값
     if n == 3:
@@ -12,7 +14,7 @@ def star(n,x):
         return star(n//3, out)
 
     
-n = int(input())
+n = int(sys.stdin.readline())
 first = ['***', '* *', '***']
 final = star(n, first)
 for i in final:
