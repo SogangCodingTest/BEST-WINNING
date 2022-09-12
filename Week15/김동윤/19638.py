@@ -1,5 +1,4 @@
 from heapq import heappop, heappush
-import math
 import sys
 # 인구수, 센티의 키, 뿅망치 횟수 제한 
 n,h,t = map(int, sys.stdin.readline().split())
