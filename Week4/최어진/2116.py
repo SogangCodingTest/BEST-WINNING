@@ -10,40 +10,15 @@ N = 5
 #--------------------------#
 
 # 순서대로 1번째부터 N번째까지의 주사위의 숫자 입력
-dices = []
-# for _ in range(N):
-#     dices.append(list(map(int, input().split())))
+dices = [list(map(int, input().split())) for _ in range(N)]
 
-# 더미 데이터 입력
-dices.append(list(map(int, "2 3 1 6 5 4".split())))
-dices.append(list(map(int, "3 1 2 4 6 5".split())))
-dices.append(list(map(int, "5 6 4 1 3 2".split())))
-dices.append(list(map(int, "1 3 6 2 4 5".split())))
-dices.append(list(map(int, "4 1 6 5 2 3".split())))
+# 재귀함수를 통한 완전 탐색
+max_sum = -1
 
-# for문을 통한 완전 탐색
-max_sum = 0
+def place(current_dice, top, current_sum):
+    if current_dice >= N:
+        max_sum = current_sum if current_sum > max_sum else max_sum
+        return
+
 for i in range(6):
-    current_sum = 0
-    bottom = dices[0][i]
-    bottom_idx = dices[0].index(bottom)
-    top_idx = (bottom_idx + 3) % 6
-    top = dices[0][top_idx]
-    
-    available_values = [k for k in dices[0] if k != bottom and k != top]
-    current_sum += max(available_values)
-
-    for j in range(1, 5):
-        bottom = top
-        bottom_idx = dices[j].index(bottom)
-        top_idx = (bottom_idx + 3) % 6
-        top = dices[j][top_idx]
-
-        available_values = [k for k in dices[j] if k != bottom and k != top]
-        current_sum += max(available_values)
-
-    if max_sum < current_sum:
-        max_sum = current_sum
-
-# 결과 출력
-print(max_sum)
+    place(0, -1, max())
