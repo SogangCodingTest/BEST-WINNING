@@ -27,14 +27,12 @@ while len(q) != 0:
         # 위쪽
         if i - 1 >= 0:
             if visited_before[i - 1][j] > level + 1:
-                
-                
-            if board[i - 1][j] == 0:
-                    visited_before[i - 1][j] = level + 1
-                    visited_after[i - 1][j] = level + 1
-                    q.append([i - 1, j, level + 1, True])
-            else:
-
+                if board[i - 1][j] == 0:
+                        visited_before[i - 1][j] = level + 1
+                        visited_after[i - 1][j] = level + 1
+                        q.append([i - 1, j, level + 1, True])
+                else:
+                    pass
 
         # 아래쪽
         if i + 1 < N:
