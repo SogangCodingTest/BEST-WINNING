@@ -1,4 +1,3 @@
-
 import sys
 # 현재 휴게소의 개수 N, 
 # 더 지으려고 하는 휴게소의 개수 M, 
@@ -10,10 +9,10 @@ location.append(0) # 0과
 location.append(L) # 맨 끝 점 추가해줘야 함, 여기에는 휴게소 세워질 수 없으므로 
 location.sort() # 정렬
 
-r = L
+r = L 
 l = 0
 answer=0
-while l<r:
+while l<=r:
     mid=(r+l)//2 # 최대거리 후보
 
     # 시뮬레이션
