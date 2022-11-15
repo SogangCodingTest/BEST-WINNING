@@ -1,27 +1,51 @@
 import sys
-sys.setrecursionlimit(10 ** 6)
-from collections import deque
+from collections import defaultdict
 
-test_case = int(sys.stdin.readline())
+sys.setrecursionlimit(10**5)
 
-for _ in range(test_case):
-    V, E = map(int, sys.stdin.readline().rstrip().split())
+def input(): return sys.stdin.readline().rstrip()
 
-    graph = [[] for _ in range(V)]
-    visited = [False for _ in range(V)]
+K = int(input())
 
-    # 그래프의 연결 정보 E개 입력
+def dfs(current, sign):
+    visited[current] = sign
+
+    for neighbor in edge[current]:
+        # 1. 아직 방문하지 않은 경우는
+        if visited[neighbor] == False:
+            # 다른 집합으로 분류해서 DFS 수행
+            if not dfs(neighbor, -sign):
+                return False
+        # 2. 방문한 경우는
+        else:
+            # 반대 집합이면 통과하고 아닌 경우는 False 리턴
+            if visited[neighbor] == sign:
+                return False
+
+    return True
+
+for _ in range(K):
+    V, E = map(int, input().split())
+
+    edge = defaultdict(list)
     for _ in range(E):
-        a, b = map(int, sys.stdin.readline().rstrip().split())
-        if b - 1 not in graph[a - 1]:
-            graph[a - 1].append(b - 1)
-            graph[b - 1].append(a - 1)
+        A, B = map(int, input().split())
+        
+        if A in edge.keys():
+            edge[A].append(B)
+        else:
+            edge[A] = [B]
+        if B in edge.keys():
+            edge[B].append(A)
+        else:
+            edge[B] = [A]
 
-    flag = True
-    for i, vis in enumerate(visited):
-        if not vis:
-            if not dfs(i, 1):
-                break
+    visited = [False] * (V + 1)
 
-    print('YES' if flag else 'NO')
-    
+    answer = 'YES'
+    for v in range(V):
+        if visited[v] == False:
+            if not dfs(v, 1):
+                answer = 'NO'
+
+    print(answer)
