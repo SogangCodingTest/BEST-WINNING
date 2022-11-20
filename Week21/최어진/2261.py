@@ -31,10 +31,11 @@ def dnq(start, end):
     middle = start + (end - start) // 2
     middle_x = points[middle][0]
     # x축을 기준으로 분할 정복한 최솟값 구하기
-    x_min = min(dnq(start, middle), dnq(middle, end))
+    x_min = min(dnq(start, middle), dnq(middle + 1, end))
 
     # middle point를 중심으로 x축 좌우 방향으로 x_min 이내로 있는 점들만 집합
-    additional_set = [(x, y) for x, y in points if (x - middle_x) ** 2 < x_min]
+    additional_set = [(x, y) for x, y in points[start : end + 1] if (x - middle_x) ** 2 < x_min]
+
     # y축 기준 작은 순서로 정렬
     additional_set.sort(key = lambda x:x[1])
 
@@ -45,7 +46,9 @@ def dnq(start, end):
             elif additional_set[i][0] <= middle_x and additional_set[j][0] <= middle_x: continue
             elif middle_x < additional_set[i][0] and middle_x < additional_set[j][0]: continue
 
+            # print(y_min, " -> ", end = "")
             y_min = min(y_min, distance(additional_set[i], additional_set[j]))
+            # print(y_min)
 
     return y_min
     
