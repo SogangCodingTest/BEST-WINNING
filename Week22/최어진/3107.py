@@ -2,9 +2,6 @@ import sys
 
 def input(): return sys.stdin.readline().rstrip()
 
-# string.zfill(4)
-# print(f'{number:05d}')
-
 string = input()
 
 # 맨 앞에 ::가 붙은 경우
@@ -16,6 +13,8 @@ elif string[-2:] == '::':
 # ::만 있는 경우
 elif string == '::':
     string = '0:zeros:0'
+else:
+    string = string.replace('::', ':zeros:')
 
 string = string.split(':')
 
