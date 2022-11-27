@@ -16,17 +16,20 @@ def solution(r,c,n,mapp) :
                 for j in range(c) :
                     if type(mapp[i][j])==str and mapp[i][j]=="." :
                         mapp[i][j] = 3
-
+        # 매번 폭탄 찾아서
+        # (1) 0초면 이제 터지게 해주고
+        # (2) 0초 아니면 시간 하나 삭감
         for i in range(r) :
             for j in range(c) :
+
                 if type(mapp[i][j])==int :
-                    if mapp[i][j]==0 :  # 폭탄이 터질 타임
-                        for k in range(4) :
+                    if mapp[i][j]==0 :  # (1) 폭탄이 터질 타임
+                        for k in range(4) : # 주변 돌아봐주고 
                             if 0<=i+rdis[k]<r and 0<=j+cdis[k]<c and type(mapp[i+rdis[k]][j+cdis[k]]) == int and mapp[i+rdis[k]][j+cdis[k]]!=0 :
                                 mapp[i+rdis[k]][j+cdis[k]] = "."
                         mapp[i][j]="." # 나 자신도 터져주기 
         
-        # 나머지 폭탄들 시간 줄여주기 
+        # (2) 나머지 폭탄들 시간 줄여주기 (1번을 마무리하고 해주기)
         for i in range(r) :
             for j in range(c) :
                 if type(mapp[i][j])==int :
