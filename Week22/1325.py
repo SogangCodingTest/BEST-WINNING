@@ -33,3 +33,5 @@ max_num = max(res)
 for r in range(1,n+1) : 
     if res[r] == max_num : 
         print(r, end = " ")
+
+# defaultdict
