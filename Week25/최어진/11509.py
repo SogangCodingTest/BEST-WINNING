@@ -1,27 +1,26 @@
+from collections import defaultdict
 import sys
 
 input = sys.stdin.readline
 
+# 최대 10^6
 N = int(input())
 
 heights = list(map(int, input().rstrip().split()))
-# print(heights)
 
 answer = 0
+arrows = defaultdict(int)
 
-while heights:
-    arrow = max(heights)
-    boom = 0
-    
-    for idx in range(len(heights)):
-        if heights[idx - boom] == arrow:
-            heights.pop(idx - boom)
-            boom += 1
-            arrow -= 1
+for height in heights:
+    # print(height)
 
-    # print(heights)
-    answer += 1
+    if arrows[height] > 0:
+        arrows[height] -= 1
+        arrows[height - 1] += 1
+    else:
+        answer += 1
+        arrows[height - 1] += 1
+
+    # print(arrows, answer)
 
 print(answer)
-
-# 13분 2초 시간 초과
