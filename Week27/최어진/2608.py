@@ -36,40 +36,40 @@ arabia = arabia_1 + arabia_2
 print(arabia)
 
 # 로마 숫자를 출력
-while arabia > 1000:
+while arabia >= 1000:
     print('M', end='')
     arabia -= 1000
-while arabia > 900:
+while arabia >= 900:
     print('CM', end='')
     arabia -= 900
-while arabia > 500:
+while arabia >= 500:
     print('D', end='')
     arabia -= 500
-while arabia > 400:
+while arabia >= 400:
     print('CD', end='')
     arabia -= 400
-while arabia > 100:
+while arabia >= 100:
     print('C', end='')
     arabia -= 100
-while arabia > 90:
+while arabia >= 90:
     print('XC', end='')
     arabia -= 90
-while arabia > 50:
+while arabia >= 50:
     print('L', end='')
     arabia -= 50
-while arabia > 40:
+while arabia >= 40:
     print('XL', end='')
     arabia -= 40
-while arabia > 10:
+while arabia >= 10:
     print('X', end='')
     arabia -= 10
-while arabia > 9:
+while arabia >= 9:
     print('IX', end='')
     arabia -= 9
-while arabia > 5:
+while arabia >= 5:
     print('V', end='')
     arabia -= 5
-while arabia > 4:
+while arabia >= 4:
     print('IV', end='')
     arabia -= 4
 while arabia:
