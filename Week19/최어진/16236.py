@@ -1,96 +1,94 @@
-# 백준 16236번 : 아기 상어
-
-# 전략
-
-# 코드
-
-from collections import deque
 import sys
+from collections import deque
 
-def input(): return sys.stdin.readline().rstrip()
+input = sys.stdin.readline
 
-# 그래프 구성
+# 최대 20
 N = int(input())
-graph = list(list(map(int, input().split())) for _ in range(N))
 
-# 상하좌우 방향 초기화
-direction = ((-1, 0), (1, 0), (0, -1), (0, 1))
-
-# 최단 거리를 위한 초기화 값
-INF = 1e9
-
-# 아기 상어 크기
-shark_size = 2
-
-# 아기 상어의 현재 좌표
-now_x, now_y = 0, 0
-
-# 아기 상어 초기 위치 확인
+spaces = [list(map(int, input().rstrip().split())) for _ in range(N)]
+shark_r, shark_c = N, N
+# 0: 빈 칸
+# 1, 2, 3, 4, 5, 6: 칸에 있는 물고기의 크기
+# 9: 아기 상어의 위치
 for i in range(N):
     for j in range(N):
-        if graph[i][j] == 9:
-            now_x, now_y = i, j
-            graph[i][j] = 0
+        if spaces[i][j] == 9:
+            shark_r, shark_c = i, j
+            spaces[i][j] = 0
 
-# 현재 위치에서 각 물고기까지의 거리를 반환, 지나는 경로마다 값을 저장
-def BFS():
-    q = deque([(now_x, now_y)])
-    # 방문 여부
-    visited = [[-1] * N for _ in range(N)]
-    visited[now_x][now_y] = 0
+moves = ((-1, 0), (1, 0), (0, -1), (0, 1))
+shark_size = 2
+shark_cnt = 0
 
-    while q:
-        x, y = q.popleft()
-
-        for dx, dy in direction:
-            nx, ny = x + dx, y + dy
-            # graph 범위 확인
-            if 0 <= nx < N and 0 <= ny < N:
-                # 상어가 이동 가능한지 확인
-                if shark_size >= graph[nx][ny] and visited[nx][ny] == -1:
-                    visited[nx][ny] = visited[x][y] + 1
-                    q.append((nx, ny))
-                    
-    return visited
-
-# 먹을 물고기 찾기
-def solve(visited):
-    x, y = 0, 0
-    min_distance = INF
-    for i in range(N):
-        for j in range(N):
-            # BFS에서 지나지 않는 경로는 최단 경로가 아님 + 아기 상어가 먹을 수 있는지 확인
-            if visited[i][j] != -1 and 1 <= graph[i][j] < shark_size:
-                if visited[i][j] < min_distance:
-                    min_distance = visited[i][j]
-                    x, y = i, j
-
-    # 모두 탐색해도 그대로 INF이면 먹을 물고기가 없다는 것
-    if min_distance == INF:
-        return False
-    else:
-        return x, y, min_distance
+# 거리가 가까운 물고기가 많다면, 가장 위에 있는 물고기
+# 그러한 물고기가 여러마리라면, 가장 왼쪽에 있는 물고기를 먹는다.
 
 answer = 0
-food = 0
 
 while True:
-    result = solve(BFS())
+    # 먹을 수 있는 물고기 리스트 뽑기
+    target_fishes = []
+    for i in range(N):
+        for j in range(N):
+            if 1 <= spaces[i][j] < shark_size:
+                target_fishes.append((i, j))
 
-    if not result:
-        print(answer)
+    # 더 이상 먹을 수 있는 물고기가 공간에 없다면 종료
+    if len(target_fishes) == 0:
         break
-    else:
-        last_x, last_y, move = result
-        now_x, now_y = last_x, last_y
-        # 아기 상어가 이동한 거리 누적
-        answer += move
-        # 먹은 물고기에 대해 비워주는 처리
-        graph[now_x][now_y] = 0
-        # 먹은 횟수 1 추가
-        food += 1
 
-    # 상어의 크기가 커질 수 있는 경우
-    if food >= shark_size:
-        shark_size += 1
-        food = 0
+    # BFS 초기화
+    q = deque()
+    visited = [[False for _ in range(N)] for _ in range(N)]
+    q.append((shark_r, shark_c, 0))
+    visited[shark_r][shark_c] = True
+
+    # 이번 물고기를 먹기 위해 이동한 횟수
+    moved_time = 1e9
+    moved_r, moved_c = N, N
+
+    while q:
+        r, c, level = q.popleft()
+
+        # BFS를 중단해도 되는 경우
+        if moved_time < level:
+            break
+
+        # 어떤 물고기를 먹을 수 있게 되는 경우
+        if (r, c) in target_fishes:
+            # 아래 조건들에 만족하면서 우선순위가 더 높으면 최종적으로 먹을 물고기를 변경
+            if moved_time > level:
+                moved_time = level
+                moved_r, moved_c = r, c
+                # print(f'case 1, -> {r}, {c}')
+            elif moved_time == level and moved_r > r:
+                moved_r, moved_c = r, c
+                # print(f'case 2, -> {r}, {c}')
+            elif moved_time == level and moved_r == r and moved_c > c:
+                moved_c = c
+                # print(f'case 3, -> {r}, {c}')
+
+        for dr, dc in moves:
+            if 0 <= r + dr < N and 0 <= c + dc < N:
+                if not visited[r + dr][c + dc] and spaces[r + dr][c + dc] <= shark_size:
+                    q.append((r + dr, c + dc, level + 1))
+                    visited[r + dr][c + dc] = True
+
+    if moved_time == 1e9:
+        break
+
+    # 상어가 물고기 먹었을 때 처리
+    shark_r, shark_c = moved_r, moved_c
+    spaces[shark_r][shark_c] = 0
+    shark_cnt += 1
+    answer += moved_time
+
+    if shark_cnt == shark_size:
+        shark_size, shark_cnt = shark_size + 1, 0
+
+    # for row in spaces:
+    #     print(row)
+    # print()
+
+print(answer)
