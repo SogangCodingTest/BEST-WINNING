@@ -25,6 +25,7 @@ def dikstra(a,b ) :
     min_cost = [int(1e9) for _ in range(N+1)]
     min_cost[0] = 0 # 나에게서 나로 가는 비용은 0으로 처리  
     heapq.heappush(hq,(a,0)) # 시작 정점 / 시작 비용
+    
     while hq : 
         now_node, now_cost = heapq.heappop(hq)
         if now_cost > min_cost[now_node] :
