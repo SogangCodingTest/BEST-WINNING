@@ -10,7 +10,7 @@ for i in range(n) :
     targ = int(sys.stdin.readline().rstrip())
     if targ!=0:
         heapq.heappush(lis,-1*targ)
-    else : # 0이먄 수 갱신 
+    else : # 0이면 
         zerocnt+=1
 sum = 0
 
