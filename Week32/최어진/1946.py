@@ -26,3 +26,4 @@ for _ in range(int(input())):
             highest_second = second
 
     print(passes)
+
