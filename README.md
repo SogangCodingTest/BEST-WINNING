@@ -66,21 +66,28 @@
 
 ### Table of Content
 
-- 문제 풀이 플랫폼은 백준(acmicpc.net)을 기준으로 선정합니다.
+- 문제 풀이 플랫폼은 백준(acmicpc.net)을 기준으로 선정
 
-> 1차 알고리즘 문제풀이 순서 (기간 12주)
+> 1차 알고리즘 문제풀이 순서 (기간: 11주)
 
-- [1주차. 스택] (6/2) ☑
-- [2주차. 큐] (6/9) ☑
-- [3주차. 힙 & PriorityQueue] (6/16) ☑ 
-- [4주차. 그래프 탐색-1 완전탐색] (6/23) ☑
-- [5주차. 그래프 탐색-2 DFS] (6/30) ☑ 
-- [6주차. 그래프 탐색-3 BFS] (7/7) ☑
-- [7주차. 다이나믹 프로그래밍] (7/14) ☑
-- [8주차. 구현] (7/21)  ☑
-- [9주차. 그리디 알고리즘] (7/28) ☑
-- [10주차. 이분탐색] (8/6) ☑
-- [11주차. 분할정복] (8/11)
+- 1주차. 스택 (6-2) ✅
+- 2주차. 큐 (6-9) ✅
+- 3주차. 힙 & 우선순위 큐 (6-16) ✅ 
+- 4주차. 그래프 탐색-1 완전탐색 (6-23) ✅
+- 5주차. 그래프 탐색-2 DFS (6-30) ✅ 
+- 6주차. 그래프 탐색-3 BFS (7-7) ✅
+- 7주차. 다이나믹 프로그래밍 (7-14) ✅
+- 8주차. 구현 & 시뮬레이션 (7-21) ✅
+- 9주차. 그리디 알고리즘 (7-28) ✅
+- 10주차. 이분탐색 (8-6) ✅
+- 11주차. 분할정복 (8-11) ✅
+
+> 2차 알고리즘 문제풀이 (기간: 제한 없음 / 현재 진행 중)
+
+- 해당 주차에 각자 주어진 주제에 대해 1문제씩 선정
+  - 주차 당 **4문제**씩 풀이 _(17주차부터 6문제 -> 4문제로 변경)_
+
+> 주차 별 문제 선정 내역
 
 <div>
 <table>
@@ -93,6 +100,92 @@
 <td>이정모</td>
 <td>최건</td>
 <td>최어진</td>
+</tr>
+
+<tr>
+<td>1주차</td>
+<td>스택</td>
+<td colspan='4' align='center'>
+   <a target="_blank" href="https://www.acmicpc.net/problem/2304">
+      2304번: 창고 다각형
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/2841">
+      2841번: 외계인의 기타연주
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/2800">
+      2800번: 괄호 제거
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/2493">
+      2493번: 탑
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/4889">
+      4889번: 안정적인 문자열
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/1935">
+      1935번: 후위표기식 2
+   </a>
+</td>
+</tr>
+
+<tr>
+<td>2주차</td>
+<td>큐</td>
+<td colspan='4' align='center'>
+   <a target="_blank" href="https://www.acmicpc.net/problem/5404">
+      5404번: 주차장
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/13335">
+      13335번: 트럭
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/3190">
+      3190번: 뱀
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/14713">
+      14713번: 앵무새
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/20923">
+      20923번: 숫자 할리갈리 게임
+   </a>
+</td>
+</tr>
+
+<tr>
+<td>3주차</td>
+<td>힙 & 우선순위 큐</td>
+<td colspan='4' align='center'>
+   <a target="_blank" href="https://www.acmicpc.net/problem/11000">
+      11000번: 강의실 배정
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/19598">
+      19598번: 최소 회의실 개수
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/13975">
+      13975번: 파일 합치기 3
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/11286">
+      11286번: 절댓값 힙
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/15903">
+      15903번: 카드 합체 놀이
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/14235">
+      14235번: 크리스마스 선물
+   </a>
+</td>
 </tr>
 
 <!-- 4주차 시작 -->
@@ -205,23 +298,31 @@
 <td>7주차</td>
 <td>DP</td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/4179">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/12865">
+      12865번: 평범한 배낭
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/9251">
+      9251번: LCS
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/7569">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/2056">
+      2056번: 작업
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/5014">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/2294">
+      2294번: 동전 2
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/1309">
+      1309번: 동물원
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/18112">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/20925">
+      20925번: 메이플스토리
    </a>
 </td>
 </tr>
@@ -232,23 +333,31 @@
 <td>8주차</td>
 <td>구현 & 시뮬레이션</td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/4179">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/14499">
+      14499번: 주사위 굴리기
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/7569">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/1091">
+      1091번: 카드 섞기
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/16509">
+      16509번: 장군
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/5014">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/14503">
+      14503번: 로봇 청소기
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/18112">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/2563">
+      2563번: 색종이
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/14890">
+      14890번: 경사로
    </a>
 </td>
 </tr>
@@ -259,23 +368,31 @@
 <td>9주차</td>
 <td>그리디</td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/4179">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/1041">
+      1041번: 주사위
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/7569">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/19539">
+      19539번: 사과나무
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/5014">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/12904">
+      12904번: A와 B
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/1715">
+      1715번: 카드 정렬하기
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/18112">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/1700">
+      1700번: 멀티탭 스케줄링
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/1202">
+      1202번: 보석 도둑
    </a>
 </td>
 </tr>
@@ -286,23 +403,31 @@
 <td>10주차</td>
 <td>이분 탐색</td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/4179">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/3151">
+      3151번: 합이 0
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/1253">
+      1253번: 좋다
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/7569">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/9024">
+      9024번: 두 수의 합
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/5014">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/2470">
+      2470번: 두 용액
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/2022">
+      2022번: 사다리
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/18112">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/8983">
+      8983번: 사냥꾼
    </a>
 </td>
 </tr>
@@ -313,23 +438,23 @@
 <td>11주차</td>
 <td>분할 정복</td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/4179">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/2630">
+      2630번: 색종이 만들기
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/7569">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/1074">
+      1074번: Z
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/5014">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/18291">
+      18291번: 비요뜨의 징검다리 건너기
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/18112">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/6549">
+      6549번: 히스토그램에서 가장 큰 직사각형
    </a>
 </td>
 </tr>
@@ -339,24 +464,29 @@
 <tr>
 <td>12주차</td>
 <td>프로그래머스 2018 카카오 Blind Recruitment</td>
-<td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/4179">
-      
+<td colspan='4' align='center'>
+   <a target="_blank" href="https://school.programmers.co.kr/learn/courses/30/lessons/17676">
+      추석 트래픽
    </a>
-</td>
-<td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/7569">
-      
+   <br />
+   <a target="_blank" href="https://school.programmers.co.kr/learn/courses/30/lessons/17677">
+      뉴스 클러스터링
    </a>
-</td>
-<td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/5014">
-      
+   <br />
+   <a target="_blank" href="https://school.programmers.co.kr/learn/courses/30/lessons/17678">
+      셔틀버스
    </a>
-</td>
-<td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/18112">
-      
+   <br />
+   <a target="_blank" href="https://school.programmers.co.kr/learn/courses/30/lessons/17679">
+      프렌즈 4블록
+   </a>
+   <br />
+   <a target="_blank" href="https://school.programmers.co.kr/learn/courses/30/lessons/17680">
+      캐시
+   </a>
+   <br />
+   <a target="_blank" href="https://school.programmers.co.kr/learn/courses/30/lessons/17681">
+      비밀지도
    </a>
 </td>
 </tr>
@@ -367,23 +497,31 @@
 <td>13주차</td>
 <td>백준 - 자유</td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/4179">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/3055">
+      3055번: 탈출
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/20924">
+      20924번: 트리의 기둥과 가지
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/7569">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/17225">
+      17225번: 세훈이의 선물가게
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/1389">
+      1389번: 케빈 베이컨의 6단계 법칙
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/5014">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/13904">
+      13904번: 과제
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/18112">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/2887">
+      2887번: 행성 터널
    </a>
 </td>
 </tr>
@@ -394,24 +532,34 @@
 <td>14주차</td>
 <td>백준 - 자유</td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/4179">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/16120">
+      16120번: PPAP
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/7569">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/14575">
+      14575번: 뒤풀이
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/5014">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/2565">
+      2565번: 전깃줄
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/2447">
+      2447번: 별 찍기 - 10
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/14891">
+      14891번: 톱니바퀴
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/9935">
+      9935번: 문자열 폭발
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/18112">
-      
-   </a>
+<!-- 참여 못함 -->
 </td>
 </tr>
 <!-- 14주차 끝 -->
@@ -421,23 +569,31 @@
 <td>15주차</td>
 <td>백준 - 자유</td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/4179">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/2206">
+      2206번: 벽 부수고 이동하기
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/16953">
+      16953번: A → B
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/7569">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/15486">
+      15486번: 퇴사 2
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/19638">
+      19638번: 센티와 마법의 뿅망치
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/5014">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/1707">
+      1707번: 이분 그래프
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/18112">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/16929">
+      16929번: Two Dots
    </a>
 </td>
 </tr>
@@ -448,23 +604,31 @@
 <td>16주차</td>
 <td>백준 - 자유</td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/4179">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/1477">
+      1477번: 휴게소 세우기
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/7569">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/1992">
+      1992번: 쿼드트리
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/5014">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/21610">
+      21610번: 마법사 상어와 비바라기
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/17298">
+      17298번: 오큰수
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/18112">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/5430">
+      5430번: AC
+   </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/21758">
+      21758번: 꿀 따기
    </a>
 </td>
 </tr>
@@ -879,24 +1043,24 @@
 <tr>
 <td>32주차</td>
 <td>백준 - 자유</td>
-<td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/4179">
-      
+<td rowspan='2'>
+   <a target="_blank" href="https://www.acmicpc.net/problem/16234">
+      16234번: 인구 이동
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/7569">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/2615">
+      2615번: 오목
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/5014">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/12869">
+      12869번: 뮤탈리스크
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/18112">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/1946">
+      1946번: 신입 사원
    </a>
 </td>
 </tr>
@@ -907,23 +1071,18 @@
 <td>33주차</td>
 <td>백준 - 자유</td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/4179">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/15927">
+      15927번: 회문은 회문아니야!!
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/7569">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/14391">
+      14391번: 종이 조각
    </a>
 </td>
 <td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/5014">
-      
-   </a>
-</td>
-<td>
-   <a target="_blank" href="https://www.acmicpc.net/problem/18112">
-      
+   <a target="_blank" href="https://www.acmicpc.net/problem/14891">
+      14891번: 톱니바퀴
    </a>
 </td>
 </tr>
@@ -932,14 +1091,6 @@
 </tbody>
 </table>
 </div>
-
-|------|------|--------|--------|------|--------|
-| 1    | | | | | |
-| 2    | | | | | |
-| 3    | | | | | |
-| 5    | dd | | | | |
-
-`작성 중...`
 
 <br />
 
@@ -956,16 +1107,20 @@ cd [새로운 폴더 이름]
 git branch [자신의 Github Nickname]
 ```
 
-3. 자신이 풀이한 문제에 대한 코드는 `Week00/본인 이름/문제번호.py`에 저장합니다. 이후 아래 컨벤션에 따라 커밋합니다. 이후 원격 저장소로 푸시합니다.
+3. 자신이 풀이한 문제에 대한 코드는 `Week00/본인 이름/문제번호.py`에 저장합니다. 이후 아래 컨벤션에 따라 커밋합니다. 이후 원격 저장소 상의 `본인의 닉네임 브랜치`로 푸시합니다.
 ```
 git add Week00/본인 이름/문제번호.py
 git commit -m "1주차 9999번 풀이"
 git push origin [자신의 Github Nickname]
 ```
 
-4. 해당 주차의 문제풀이는 하나의 PR 단위로 제출하는 것을 원칙으로 합니다.
+4. 해당 주차의 문제풀이는 하나의 Pull Request 단위로 제출하는 것을 원칙으로 합니다. PR의 내용은 필수가 아니며, 각자가 공부한 내용을 기록하기 편리하도록 활용합니다.
 
-작성중...
+<img width="972" alt="image" src="https://user-images.githubusercontent.com/6462456/227729368-0bec6b2c-fa36-4213-998b-2586d3300a3d.png" />
+
+_Pull Request 작성 예시_
+
+5. 스터디를 진행하고 난 후엔 PR을 `main` 브랜치로 병합합니다. 각자의 브랜치는 삭제하지 않도록 주의하세요!
 
 <br />
 
