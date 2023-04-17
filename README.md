@@ -1097,6 +1097,55 @@
 </tr>
 <!-- 33주차 끝 -->
 
+<!-- 34주차 시작 -->
+<tr>
+<td>34주차</td>
+<td>백준 - 아쉬웠던 문제 돌아보기</td>
+<td rowspan='2'>
+   <a target="_blank" href="https://www.acmicpc.net/problem/1863">
+      1863번: 스카이라인 쉬운거 (19주차)
+   </a>
+</td>
+<td>
+   <a target="_blank" href="https://www.acmicpc.net/problem/15927">
+      15927번: 회문은 회문아니야!! (33주차)
+   </a>
+</td>
+<td>
+   <a target="_blank" href="https://www.acmicpc.net/problem/2493">
+      2493번: 탑 (1주차)
+   </a>
+</td>
+<td>
+   <a target="_blank" href="https://www.acmicpc.net/problem/13023">
+      13023번: ABCDE (5주차)
+   </a>
+</td>
+</tr>
+<!-- 34주차 끝 -->
+
+<!-- 35주차 시작 -->
+<tr>
+<td>35주차</td>
+<td>백준 - 아쉬웠던 문제 돌아보기</td>
+<td>
+   <a target="_blank" href="https://www.acmicpc.net/problem/17225">
+      17225번: 세훈이의 선물가게 (13주차)
+   </a>
+</td>
+<td>
+   <a target="_blank" href="https://www.acmicpc.net/problem/1194">
+      1194번: 달이 차오른다, 가자. (24주차)
+   </a>
+</td>
+<td>
+   <a target="_blank" href="https://www.acmicpc.net/problem/2206">
+      2206번: 벽 부수고 이동하기 (15주차)
+   </a>
+</td>
+</tr>
+<!-- 35주차 끝 -->
+
 </tbody>
 </table>
 </div>
