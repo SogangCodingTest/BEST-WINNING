@@ -1142,6 +1142,10 @@
    <a target="_blank" href="https://www.acmicpc.net/problem/2206">
       2206번: 벽 부수고 이동하기 (15주차)
    </a>
+   <br />
+   <a target="_blank" href="https://www.acmicpc.net/problem/21610">
+      21610번: 마법사 상어와 비바라기 (16주차)
+   </a>
 </td>
 </tr>
 <!-- 35주차 끝 -->
