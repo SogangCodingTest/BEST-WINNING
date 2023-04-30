@@ -1,62 +1,41 @@
-import sys
 from collections import deque
+import sys
 
-N, M = map(int, sys.stdin.readline().split())
+input = sys.stdin.readline
 
-board = [list(map(int, list(sys.stdin.readline().rstrip()))) for _ in range(N)]
-visited_before = [[999999 for _ in range(M)] for _ in range(N)]
-visited_after = [[999999 for _ in range(M)] for _ in range(N)]
+# N, M <= 10^3
+N, M = map(int, input().rstrip().split())
 
-q = deque([])
+# 0은 빈 칸, 1은 벽
+maps = [list(map(int, list(input().rstrip()))) for _ in range(N)]
 
-visited_before[0][0] = 1
-visited_after[0][0] = 1
-q.append([0, 0, 1, True])
+moves = ((-1, 0), (1, 0), (0, -1), (0, 1))
 
-found = False
+# 시작점은 (0, 0), 도착점은 (N - 1, M - 1)
+q = deque()
+visited = [[[False for _ in range(M)] for _ in range(N)] for _ in range(2)]
 
-while len(q) != 0:
-    i, j, level, chance = q.popleft()
+q.append((0, 0, 1, 0))
+visited[0][0][0] = True
 
-    if i == N - 1 and j == M - 1:
-        print(level)
-        found = True
+answer = -1
+
+while q:
+    r, c, level, breaked = q.popleft()
+
+    if (r == N - 1) and (c == M - 1):
+        answer = level
         break
 
-    if chance:
-        # 위쪽
-        if i - 1 >= 0:
-            if visited_before[i - 1][j] > level + 1:
-                if board[i - 1][j] == 0:
-                        visited_before[i - 1][j] = level + 1
-                        visited_after[i - 1][j] = level + 1
-                        q.append([i - 1, j, level + 1, True])
-                else:
-                    pass
+    for dr, dc in moves:
+        if (0 <= r + dr < N) and (0 <= c + dc < M):
+            if maps[r + dr][c + dc] == 1:
+                if not breaked:
+                    visited[1][r + dr][c + dc] = True
+                    q.append((r + dr, c + dc, level + 1, 1))
+            else:
+                if not visited[breaked][r + dr][c + dc]:
+                    visited[breaked][r + dr][c + dc] = True
+                    q.append((r + dr, c + dc, level + 1, breaked))
 
-        # 아래쪽
-        if i + 1 < N:
-            if board[i + 1][j] == 0:
-                if visited[i + 1][j] > level + 1:
-                    visited[i + 1][j] = level + 1
-                    q.append([i + 1, j, level + 1, chance])
-        # 왼쪽
-        if j - 1 >= 0:
-            if board[i][j - 1] == 0:
-                if visited[i][j - 1] > level + 1:
-                    visited[i][j - 1] = level + 1
-                    q.append([i, j - 1, level + 1, chance])
-        # 오른쪽
-        if j + 1 < M:
-            if board[i][j + 1] == 0:
-                if visited[i][j + 1] > level + 1:
-                    visited[i][j + 1] = level + 1
-                    q.append([i, j + 1, level + 1, chance])
-
-    else:
-        pass
-
-
-    # print(q)
-
-if not found: print(-1)
+print(answer)
