@@ -1150,6 +1150,33 @@
 </tr>
 <!-- 35주차 끝 -->
 
+<!-- 36주차 시작 -->
+<tr>
+<td>36주차</td>
+<td>백준 - 아쉬웠던 문제 돌아보기</td>
+<td>
+   <a target="_blank" href="https://www.acmicpc.net/problem/1946">
+      1946번: 신입 사원 (32주차)
+   </a>
+</td>
+<td>
+   <a target="_blank" href="https://www.acmicpc.net/problem/1759">
+      1759번: 암호 만들기 (4주차)
+   </a>
+</td>
+<td>
+   <a target="_blank" href="https://www.acmicpc.net/problem/14500">
+      14500번: 테트로미노 (28주차)
+   </a>
+</td>
+<td>
+   <a target="_blank" href="https://www.acmicpc.net/problem/21610">
+      21610번: 마법사 상어와 비바라기 (16주차)
+   </a>
+</td>
+</tr>
+<!-- 36주차 끝 -->
+
 </tbody>
 </table>
 </div>
