@@ -1159,7 +1159,7 @@
       1946번: 신입 사원 (32주차)
    </a>
 </td>
-<td>
+<td rowspan='2'>
    <a target="_blank" href="https://www.acmicpc.net/problem/1759">
       1759번: 암호 만들기 (4주차)
    </a>
@@ -1176,6 +1176,28 @@
 </td>
 </tr>
 <!-- 36주차 끝 -->
+
+<!-- 37주차 시작 -->
+<tr>
+<td>37주차</td>
+<td>백준 - 아쉬웠던 문제 돌아보기</td>
+<td>
+   <a target="_blank" href="https://www.acmicpc.net/problem/2240">
+      2240번: 자두나무 (29주차)
+   </a>
+</td>
+<td>
+   <a target="_blank" href="https://www.acmicpc.net/problem/1461">
+      1461번: 도서관 (31주차)
+   </a>
+</td>
+<td>
+   <a target="_blank" href="https://www.acmicpc.net/problem/2887">
+      2887번: 행성 터널 (13주차)
+   </a>
+</td>
+</tr>
+<!-- 37주차 끝 -->
 
 </tbody>
 </table>
