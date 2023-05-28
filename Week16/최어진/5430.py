@@ -1,55 +1,50 @@
+# 백준 5430번: AC
+
 import sys
 
-T = int(input())
-answers = []
+input = sys.stdin.readline
 
-for _ in range(T):
-    commands = list(input().rstrip())
+def AC(commands, len_arr):
+    left, right = 0, len_arr
+    front = True
 
-    N = int(sys.stdin.readline())
-    arr = sys.stdin.readline().rstrip()
-    q = arr[1:-1].split(',') if N != 0 else []
+    for comm in commands: # 10^5
+        # print(comm)
 
-    if N == 0:
-        start = 0
-        end = 0
-    elif N == 1:
-        start = 1
-        end = 1
-    else:
-        start = 1
-        end = N
+        if comm == 'R':
+            front = not front
+        elif comm == 'D':
+            if left >= right: return -1
 
-    forward = True
-    error = False
+            if front:
+                left += 1
+            else:
+                right -= 1
 
-    for com in commands:
-        if com == 'R':
-            start, end = N-1 - end, N-1 - start
-            forward = not forward
-        elif com == 'D':
-            if start == end:
-                error = True
-                break
+        # print(front, left, right)
 
-            start += 1
+    return (front, left, right)
 
-    if error:
-        answers.append("error")
-        # print("error")
+# T <= 10^2
+for _ in range(int(input())):
+    # P <= 10^5
+    P = input().rstrip()
+    
+    # N <= 10^5
+    N = int(input())
+
+    arr = list(input().rstrip()[1:-1].split(","))
+    if arr[0] == '':
+        arr = []
+
+    ac = AC(P, len(arr))
+
+    if ac == -1:
+        print("error")
         continue
-
-    if not forward:
-        start, end = N-1 - end, N-1 - start
-
-    answer = q[start : end+1]
-    if not forward:
-        answer.reverse()
-    answers.append(f"[{ ','.join(answer) }]")
-    #     start, end = N - 1 - start, N - 1 - end
-
-    # answers.append(f"[{ ','.join(q[start : end+1]) }]")
-
-
-for ans in answers:
-    print(ans)
+    
+    front, left, right = ac
+    if not front:
+        arr.reverse()
+        left, right = N - right, N - left
+    print(f'[{",".join(arr[left : right])}]')
